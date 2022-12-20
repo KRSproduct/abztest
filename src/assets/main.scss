@@ -1,0 +1,33 @@
+@import './fonts.css';
+
+html,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+
+:root {
+  --popper-theme-background-color: rgba(0, 0, 0, 0.87);
+  --popper-theme-background-color-hover: rgba(0, 0, 0, 0.87);;
+  --popper-theme-text-color: #ffffff;
+  --popper-theme-border-width: 0px;
+  --popper-theme-border-style: solid;
+  --popper-theme-border-radius: 4px;
+  --popper-theme-padding: 3px 16px;
+  --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
+}
