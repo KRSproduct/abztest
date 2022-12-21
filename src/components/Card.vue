@@ -8,8 +8,8 @@ defineProps({
 <template>
   <div class="card">
     <div class="card-image">
-      <img v-if="data.photo" :src="data.photo" />
-      <img v-else src="/photo-cover.svg" />
+      <img v-if="data.photo" :src="data.photo" alt="user-photo" />
+      <img v-else src="/photo-cover.svg" alt="default-user-photo" />
     </div>
     <div class="text clickable">
       <Popper :content="data.name">

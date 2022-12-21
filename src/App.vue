@@ -74,7 +74,10 @@ onMounted(async () => {
         </h1>
         <div class="form-wrapper">
           <div class="success-image-wrapper" v-if="isSuccessRegister">
-            <img src="@/assets/images/success-image.svg" />
+            <img
+              src="@/assets/images/success-image.svg"
+              alt="success-registration"
+            />
           </div>
           <Form @success="updateCards" v-else />
         </div>

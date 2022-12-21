@@ -6,7 +6,7 @@ import Button from "./Button.vue";
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="@/assets/images/testtask.svg" />
+          <img src="@/assets/images/testtask.svg" alt="logo" />
         </div>
         <div class="buttons">
           <Button theme="yellow">Users</Button>

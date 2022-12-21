@@ -46,7 +46,7 @@ const uploadedImage = ($event: any) => {
           <template v-if="!image"> Upload your photo </template>
           <template v-else>
             <div class="upload-text__image">
-              <img :src="image" />
+              <img :src="image" alt="uploaded-image" />
               <span>Image loaded</span>
             </div>
           </template>
