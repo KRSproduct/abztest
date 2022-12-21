@@ -93,7 +93,7 @@ onMounted(async () => {
 }
 
 .intro {
-  background: url("@/assets/images/intro-bg.jpg");
+  background: url("@/assets/images/intro-bg.webp");
   background-size: cover;
   display: flex;
   align-items: center;
