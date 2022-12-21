@@ -11,9 +11,16 @@ const props = defineProps({
 
 const imageUpload: HTMLInputElement = ref(null);
 const image: any = ref(null);
+const imageSizeAttention = ref(false);
 
 const uploadedImage = ($event: any) => {
+  imageSizeAttention.value = false;
   const file = $event.target.files[0];
+  if (file.size > 5000000) {
+    imageSizeAttention.value = true;
+    return;
+  }
+
   const reader = new FileReader();
   reader.onloadend = async () => {
     image.value = reader.result as string;
@@ -44,6 +51,12 @@ const uploadedImage = ($event: any) => {
             </div>
           </template>
         </span>
+        <div
+          class="input-text-helper text-red"
+          v-if="imageSizeAttention && !isError"
+        >
+          Image must be lower than 5mb
+        </div>
         <div class="input-text-helper text-red" v-if="isError">
           <slot />
         </div>
